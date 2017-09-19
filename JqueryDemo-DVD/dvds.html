@@ -3,31 +3,31 @@
   <head>
     <title>DVD Ambassador &mdash; Disc Locator</title>
     <link rel="stylesheet" type="text/css" href="dvds.css">
-    <script type="text/javascript" src="../../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="jquery-1.4.js"></script>
     <script type="text/javascript">
-      var filterCount = 0;
+      var filterCount = 0;/*全局变量 追踪过滤器个数*/
 
       $(function() {
 
-        $('#addFilterButton').click(function(){
-          var filterItem = $('<div>')
+        $('#addFilterButton').click(function(){ /*建立单击处理器*/
+          var filterItem = $('<div>')  /*创建过滤器项目块*/
             .addClass('filterItem')
             .appendTo('#filterPane')
-            .data('suffix','.' + (filterCount++));
+            .data('suffix','.' + (filterCount++));/*对过滤器进行分组，便于后端识别*/
           $('div.template.filterChooser')
-              .children().clone().appendTo(filterItem)
-              .trigger('adjustName');
+              .children().clone().appendTo(filterItem)/*复制过滤器下拉列表模板*/
+              .trigger('adjustName');   /*触发自定义事件*/
         });
 
-        $('select.filterChooser').live('change',function(){
+        $('select.filterChooser').live('change',function(){/*建立改变处理器*/
           var filterType = $(':selected',this).attr('data-filter-type');
           var filterItem = $(this).closest('.filterItem');
-          $('.qualifier',filterItem).remove();
+          $('.qualifier',filterItem).remove();/*删除旧的控件*/
           $('div.template.'+filterType)
-              .children().clone().addClass('qualifier')
+              .children().clone().addClass('qualifier')/*复制合适的控件*/
               .appendTo(filterItem)
               .trigger('adjustName');
-          $('option[value=""]',this).remove();
+          $('option[value=""]',this).remove();/*删除choose a filter过时的选项*/
         });
 
         $('button.filterRemover').live('click',function(){
@@ -36,13 +36,13 @@
 
         $('.filterItem [name]').live('adjustName',function(){
           var suffix = $(this).closest('.filterItem').data('suffix');
-          if (/(\w)+\.(\d)+$/.test($(this).attr('name'))) return;
-          $(this).attr('name',$(this).attr('name')+suffix);
+          if (/(\w)+\.(\d)+$/.test($(this).attr('name'))) return;/*测试是否已经有附加的后缀*/
+          $(this).attr('name',$(this).attr('name')+suffix);/*filterItem下有name属性的都添加后缀*/
         });
 
-        $('#addFilterButton').click();
+        $('#addFilterButton').click();/*模拟添加操作，初始显示一个过滤器*/
 
-        $('#filtersForm').submit(function(){
+        $('#filtersForm').submit(function(){/*取消表单提交，而是发起ajax将结果显示在resultsPane忠*/
           $('#resultsPane').load('applyFilters',$('#filtersForm').serializeArray());
           return false;
         });
@@ -68,7 +68,7 @@
 
         <fieldset id="filtersPane">
           <legend>Filters</legend>
-          <div id="filterPane"></div>
+          <div id="filterPane"></div> <!--过滤器实例的容器 -->
           <div class="buttonBar">
             <button type="button" id="addFilterButton">Add Filter</button>
             <button type="submit" id="applyFilterButton">Apply Filters</button>
@@ -81,7 +81,7 @@
 
     </div>
 
-    <!-- hidden templates -->
+    <!-- 包含并隐藏所有的模板 -->
     <div id="templates">
 
       <div class="template filterChooser">
