@@ -1,0 +1,142 @@
+
+.dispalynone{/*隐藏*/
+    display: none;
+}
+/*login begin*/
+.login{
+    width: 374px;
+    margin: 10px auto;/*居中*/
+    background:#f7f7f7;
+    border: 3px solid #394557;/*边框*/
+}
+.login .center,.register .center,.Reset .center{/*预定义文字位置*/
+    text-align: center;
+}
+.login .right,.register .right,.Reset .right{
+    text-align: right;
+}
+.login .left,.register .left,.Reset .left{
+    text-align:left;
+}
+.login .title,.register .title,.Reset .title{/*标题规范化*/
+    font-size: 26px;
+    margin: 40px 0 0 40px;
+}
+.hr{/*标题与内容相隔线*/
+    width: 80%;
+    border: 1px solid #987cb9;
+    margin:0 auto;
+}
+.content{/*内容规范化*/
+    padding-left:40px;
+    border-bottom: 3px solid #394557;
+}
+.content .form-control{/*表单格式*/
+    width: 280px;
+    margin: 10px 0 0 0;
+    display: inline-block;
+}
+.content .form-group>i{/*input-text后的图标左移*/
+    margin: 0 0 0 -30px;
+}
+.content .login_ace{/*按钮与其他部件格式*/
+    margin: 40px 0 20px 0;
+}
+.content .rememberme{/*登录界面的记住我多选格式*/
+    width: 30px;
+    height: 15px;
+    margin-left: 10px;
+}
+.content .login_ace>.btn{/*登录界面的登录按钮格式*/
+    margin-left: 50px;
+    text-align: center;
+    width: 100px;
+}
+
+.login .bottom{/*登录界面底部格式*/
+    overflow: hidden;
+    background: #5090c1;
+    font-size: 20px;
+}
+.bottom .left{
+    float:left;
+    text-align:left;
+    line-height: 65px;
+}
+.bottom .left>a{
+    color:#ffee9d;
+}
+.bottom .right>a{
+    color:#ccff84;
+}
+.bottom .right{
+    float:right;
+    text-align: right;
+    line-height: 65px;
+}
+/*login end*/
+
+/*register begin*/
+
+.register{/*注册界面格式*/
+    width: 374px;
+    margin: 10px auto;
+    background:#f7f7f7;
+    border: 3px solid #394557;
+}
+.register_ace>.iaccept{/*注册界面我接受多选按钮格式*/
+    width: 30px;
+    height: 15px;
+    margin: 10px 10px;
+}
+.buttons .btn{/*注册界面底部重置与注册按钮格式*/
+    margin: 10px 20px;
+    width: 100px;
+}
+.register .bottom{/*注册界面底部格式*/
+    overflow: hidden;
+    background: #5090c1;
+    font-size: 20px;
+    width: 368px;
+    line-height: 50px;
+}
+
+.register .bottom a{/*注册界面底部超链接字体颜色*/
+    color: #FFEE99;
+}
+
+
+/*register end*/
+
+/*Reset begin*/
+.Reset{/*密码找回界面格式*/
+    width: 374px;
+    margin: 10px auto;
+    background:#f7f7f7;
+    border: 3px solid #394557;
+    letter-spacing: 3px;/*字间距*/
+}
+.Reset .grey{/*提示语句格式*/
+    margin:30px 0 0 0;
+    color: #999999;
+}
+.Reset button{/*按钮格式*/
+    width: 100px;
+    margin-left: 90px;
+    letter-spacing: 6px;
+}
+.Reset .bottom{/*底部格式*/
+    overflow: hidden;
+    background: #c16050;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.Reset .bottom a{
+    color: #FFEE99;
+}
+/*Reset end*/
+
+.message{
+    color:red;
+}

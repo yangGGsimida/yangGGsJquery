@@ -1,0 +1,123 @@
+
+.content1 .left{/*中心内容左半边*/
+    width: 800px;
+    overflow: hidden;
+    padding: 0;
+    float:left;
+    border: 1px solid rgba(141, 120, 78, 0.38);
+}
+.content1 .right{/*右半边*/
+    width: 200px;
+    overflow: hidden;
+    padding: 0;
+    float:right;
+    border: 1px solid rgba(141, 120, 78, 0.38);
+}
+.con_nav{/*左半边上部份*/
+    padding: 0;
+    overflow: hidden;
+    height: 35px;
+    border-bottom:1px solid rgba(141, 120, 78, 0.38) ;
+}
+.con_nav .breadcrumb{/*导航区域*/
+    float:left;
+}
+.con_nav .input-group{/*搜索区域*/
+    float:right;
+    width: 200px;
+    margin-right: 30px;
+    margin-top: 3px;
+}
+.Main{/*左半边中心区域*/
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+.Main .List ul li{/*帖子主要内容列*/
+     width: 800px;
+     border-bottom: 1px solid #c7c2c5;
+     list-style: none;
+ }
+.Main .List .top{/*帖子上半部分*/
+    width: 800px;
+    height: 40px;
+    padding: 0px;
+    line-height: 40px;
+    text-align: center;
+}
+.top .visited{/*访问人数*/
+    float:left;
+    width: 90px;
+}
+.top .title{/*标题*/
+    float:left;
+    width: 500px;
+}
+.top .author{/*作者*/
+    float:left;
+    width: 90px;
+}
+.top .time{/*时间*/
+    float:right;
+    width: 90px;
+}
+.List .List_con{/*帖子内容部分的主要部分*/
+    overflow: hidden;
+    width: 700px;
+    margin: 5px auto 25px auto;
+}
+.List_con .little_title{/*小标题*/
+    text-align: center;
+}
+.List_con .photo{/*照片内容*/
+    text-align: left;
+    margin-top: 10px;
+}
+.List_con .photo img{/*照片排列*/
+    margin:0 20px;
+}
+.hottest{/*右半部分的最热门列表*/
+    width:150px;
+    margin: 50px auto;
+}
+.hottest ul li {
+    margin: 15px 0;
+}
+.hottest ul li .span1{
+    margin:0 5px;
+}
+.hottest .hot_title .fa{
+    letter-spacing: 10px;
+}
+.fenye{/*底部分页*/
+    width: 800px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.footer{/*底部*/
+    width:1000px;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px auto;
+    background: #FFFFFF;
+    margin-bottom: 30px;
+}
+.footer .form-control{/*底部表单*/
+    width: 500px;
+}
+.footer .text{/*文本框*/
+    margin: 20px 0 10px 60px;
+}
+.footer .textarea{/*文本域*/
+    width: 600px;
+    height: 100px;
+    margin: 20px 0 10px 60px;
+}
+.footer .btn{/*按钮*/
+    margin-left: 60px;
+}
+.modal .modal-dialog{/*模态框大小*/
+    width: 500px;
+}
+

@@ -1,0 +1,82 @@
+/*统一样式*/
+body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{/*重置浏览器的默认样式*/
+    margin:0;
+    padding:0;
+    border:0;
+    list-style: none;
+}
+.body1{
+    background: rgba(43, 168, 188, 0.21);/*背景色调*/
+}
+.header{/*头部*/
+    width: 1000px;/*整体宽度1000px*/
+    overflow: visible;
+    margin: 0px auto;
+}
+.logo{/*logo样式*/
+    background: #1a67bd;
+    width: 800px;
+    height: 70px;
+    float:left;
+    text-align: right;/*转换按钮居右*/
+}
+.bar{/*登录信息区域样式*/
+    width: 200px;
+    height: 70px;
+    float:right;
+    text-align: center;
+    line-height: 65px;/*居中*/
+    background: #ff7202;
+    display: none;
+}
+.logo .btn{/*转换按钮样式*/
+    margin: 30px 10px 0 0;
+}
+.header .dropdown{/*登录信息下拉框样式*/
+    float:right;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    background: #ff7202;
+    line-height: 65px;/*居中*/
+}
+.dropdown span {/*登录信息区域字体大小*/
+    font-size: 20px;
+}
+.dropdown a:hover{/*鼠标放置无下划线*/
+    text-decoration: none;
+}
+.nav{/*导航栏通栏样式*/
+    width:100%;
+    height: 50px;
+    background:#000000;
+    margin-top:20px;
+    clear:both;
+}
+.nav_con span{/*导航字体*/
+    color:#FFFFFF;
+}
+.nav_con{/*导航栏样式*/
+    width: 1000px;
+    height: 50px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 32px;
+}
+.nav_con ul li{/*导航栏列表内容样式*/
+    float:left;
+    margin: 0px 25px;
+    list-style: none;
+}
+.nav_con a:hover{
+    background: #ff7202;
+    text-decoration: none;
+}
+.content1{/*中心内容样式*/
+    width: 1000px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px auto;
+    background: #FFFFFF;
+}
+

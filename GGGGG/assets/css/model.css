@@ -1,0 +1,102 @@
+.content1 .left{/*中心内容左半边*/
+    width: 800px;
+    overflow: hidden;
+    padding: 0;
+    float:left;
+    border: 1px solid rgba(141, 120, 78, 0.38);
+}
+.content1 .right{/*右半边*/
+    width: 200px;
+    overflow: hidden;
+    padding: 0;
+    float:right;
+    border: 1px solid rgba(141, 120, 78, 0.38);
+}
+.con_nav{/*左半边上部份*/
+    padding: 0;
+    overflow: hidden;
+    height: 35px;
+    border-bottom:1px solid rgba(141, 120, 78, 0.38) ;
+}
+.con_nav .breadcrumb{/*导航区域*/
+    float:left;
+}
+.con_nav .input-group{/*搜索区域*/
+    float:right;
+    width: 200px;
+    margin-right: 30px;
+    margin-top: 3px;
+}
+.Main{/*左半边中心区域*/
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Main .BigTitle{
+    width: 800px;
+    height: 60px;
+    padding-left: 5px;
+    text-align: left;
+    border-bottom:1px solid rgba(141, 120, 78, 0.38) ;
+    position: relative;
+    overflow: hidden;
+}
+.BigTitle span{
+    position:absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+}
+.List ul li{
+    border-bottom: 1px solid rgba(141, 120, 78, 0.38);
+    overflow: hidden;
+}
+.List .List_left{
+    float:left;
+    width: 140px;
+    overflow: hidden;
+    border-right:1px solid rgba(141, 120, 78, 0.38);
+}
+.List .List_Main{
+    float:right;
+    overflow: hidden;
+}
+.List_left img{
+    width: 85px;
+    height: 90px;
+    margin: 20px auto;
+}
+.List_left .ownername{
+    margin:0 auto 50px;
+}
+.hottest{/*右半部分的最热门列表*/
+    width:150px;
+    margin: 50px auto;
+}
+.hottest ul li {
+    margin: 15px 0;
+}
+.hottest ul li .span1{
+    margin:0 5px;
+}
+.hottest .hot_title .fa{
+    letter-spacing: 10px;
+}
+.fenye{/*底部分页*/
+    width: 800px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.footer{/*底部*/
+    width:1000px;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px auto;
+    background: #FFFFFF;
+    margin-bottom: 30px;
+}
+.modal .modal-dialog{/*模态框大小*/
+    width: 500px;
+}
