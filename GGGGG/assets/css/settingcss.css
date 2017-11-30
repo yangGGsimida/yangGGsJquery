@@ -1,0 +1,29 @@
+/*统一样式*/
+body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{/*重置浏览器的默认样式*/
+    margin:0;
+    padding:0;
+    border:0;
+    list-style: none;
+}
+.header{
+    width: 1000px;
+    overflow:visible;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+.header p{
+    font-size: 26px;
+    line-height: 70px;
+}
+.header_introduce{
+    width: 600px;
+    float: left;
+}
+.header_info ul li{
+    float:left;
+    margin: 0 8px;
+    padding-top: 25px;
+}
+.header_info .dropdown li{
+    padding-top: 0;
+}
