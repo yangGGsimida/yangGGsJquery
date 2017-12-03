@@ -5,33 +5,119 @@
     <title></title>
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-editable.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-editable.min.js"></script>
     <style type="text/css">
+        .form{
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-user-info-striped {
+            border: 1px solid #dcebf7;
+        }
+        .profile-user-info {
+            margin: 0 12px;
+        }
+        .profile-info-row {
+            position: relative;
+        }
+        .profile-info-name {
+            position: absolute;
+            width: 110px;
+            text-align: right;
+            padding: 6px 10px 6px 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            font-weight: normal;
+            color: #667e99;
+            background-color: transparent;
+            border-top: 1px dotted #d5e4f1;
+        }
+        .profile-info-value {
+            padding: 6px 4px 6px 6px;
+            margin-left: 120px;
+            border-top: 1px dotted #d5e4f1;
+        }
 
     </style>
     <script type="text/javascript">
-        window.location.href="Home.html";
+        $(function () {
+            $.fn.editable.defaults.mode = 'inline';
+            $.fn.editableform.loading = "<div class='editableform-loading'><i class='fa fa-spinner'></i></div>";
+            $.fn.editableform.buttons = '<button type="submit" class="btn btn-info editable-submit"><i class="fa fa-check"></i></button>'+
+                '<button type="button" class="btn editable-cancel"><i class="fa fa-remove"></i></button>';
+
+            $('#username').editable({
+                type: "text",                //编辑框的类型。支持text|textarea|select|date|checklist等
+                title: "用户名",              //编辑框的标题
+                disabled: false,             //是否禁用编辑
+                emptytext: "空文本",          //空值的默认文本
+                mode: "inline",              //编辑框的模式：支持popup和inline两种模式，默认是popup
+                validate: function (value) { //字段验证
+                    if (!$.trim(value)) {
+                        return '不能为空';
+                    }
+                }
+            });
+        })
+        /*window.location.href="Home.html";*/
     </script>
 </head>
 <body>
-<form id="form1" runat="server">
-    <div>
-        <ul>
-            <li>
-                <a href="#"  onclick ="WindowDialog1()">润滑管理</a>
-            </li>
-            <li>
-                <a href="#" onclick ="WindowDialog2(<%=strID%>)">台账管理</a>
-            </li>
-            <li>
-                <a href="#" onclick ="WindowDialog3()">设备管理</a>
-            </li>
-            <li>
-                <a href="http://www.weibo.com?Id=<%= strID %>">故障管理</a>
-            </li>
-        </ul>
+<div class="profile-user-info profile-user-info-striped">
+    <div class="profile-info-row">
+        <div class="profile-info-name"> Username </div>
+
+        <div class="profile-info-value">
+            <span class="editable" id="username">alexdoe</span>
+        </div>
     </div>
-</form>
+
+    <div class="profile-info-row">
+        <div class="profile-info-name"> Location </div>
+
+        <div class="profile-info-value">
+            <i class="icon-map-marker light-orange bigger-110"></i>
+            <span class="editable" id="country">Netherlands</span>
+            <span class="editable" id="city">Amsterdam</span>
+        </div>
+    </div>
+
+    <div class="profile-info-row">
+        <div class="profile-info-name"> Age </div>
+
+        <div class="profile-info-value">
+            <span class="editable" id="age">38</span>
+        </div>
+    </div>
+
+    <div class="profile-info-row">
+        <div class="profile-info-name"> Joined </div>
+
+        <div class="profile-info-value">
+            <span class="editable" id="signup">20/06/2010</span>
+        </div>
+    </div>
+
+    <div class="profile-info-row">
+        <div class="profile-info-name"> Last Online </div>
+
+        <div class="profile-info-value">
+            <span class="editable" id="login">3 hours ago</span>
+        </div>
+    </div>
+
+    <div class="profile-info-row">
+        <div class="profile-info-name"> About Me </div>
+
+        <div class="profile-info-value">
+            <span class="editable" id="about">Editable as WYSIWYG</span>
+        </div>
+    </div>
+</div>
 </body>
 </html>
