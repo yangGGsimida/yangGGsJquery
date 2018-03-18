@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-editable.css" />
+    <link rel="stylesheet" href="assets/css/settingcss.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-editable.min.js"></script>
+    <script src="assets/js/settingjs.js"></script>
+</head>
+<body class="body">
+<div class="header">
+    <div class="header_introduce">
+        <p>个人中心</p>
+    </div>
+    <div class="header_info">
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+            <span class="user-info">
+            <small>欢迎光临,</small>YangGG
+        </span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                个人信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                设置
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-power-off" aria-hidden="true"></i>
+                                退出
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>|</li>
+            <li class="header_Home">
+                <a>主页</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+<div class="content">
+<div class="content_left">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#"><i class="fa fa-user"></i>个人信息</a></li>
+        <li><a href="#"><i class="fa fa-key"></i>密码管理</a></li>
+    </ul>
+</div>
+    <div class="content_right">
+        <div class="form">
+            <img class="editable " alt="yanggg" id="avatar2" src="assets/user.jpg" />
+        </div>
+        <div class="form">
+            用户名：<span id="username">yanggg</span>
+        </div>
+        <div class="form">
+            生日：<span class="editable" id="userbirthday">1997/06/12</span>
+        </div>
+        <div class="form">
+            性别：<span class="editable" id="usersex">男</span>
+        </div>
+        <div class="form">
+            积分：<span id="userPoint">0</span>
+        </div>
+        <div class="form">
+            板块：<span id="userhead">*****</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

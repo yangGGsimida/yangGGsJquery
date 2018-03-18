@@ -1,0 +1,52 @@
+/*统一样式*/
+body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{/*重置浏览器的默认样式*/
+    margin:0;
+    padding:0;
+    border:0;
+    list-style: none;
+}
+.header{/*头部*/
+    width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 100px;
+}
+.header p{/*头部字体*/
+    font-size: 26px;
+    line-height: 70px;
+}
+.header_introduce{/*头部介绍区域*/
+    width: 600px;
+    float: left;
+}
+.header_info ul li{/*头部信息区域*/
+    float:left;
+    margin: 0 8px;
+    padding-top: 25px;
+}
+.header_info .dropdown li{
+    padding-top: 0;
+}
+.content{
+    width: 1000px;
+    overflow: hidden;
+    margin: 80px auto;
+    border:1px solid rgba(141, 120, 78, 0.38);
+}
+.content_left{
+    width: 150px;
+    text-align: center;
+    float:left;
+}
+.content_right{
+    float:left;
+    width: 847px;
+    border-left:1px solid rgba(141, 120, 78, 0.38) ;
+}
+.form{
+    width: 400px;
+    overflow: hidden;
+    margin: 50px 100px;
+    border: 1px solid #c9302c;
+    font-size: 18px;
+}

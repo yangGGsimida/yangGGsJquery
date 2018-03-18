@@ -56,10 +56,8 @@
     float:left;
     width: 140px;
     overflow: hidden;
-    border-right:1px solid rgba(141, 120, 78, 0.38);
 }
 .List .List_Main{
-    float:right;
     overflow: hidden;
 }
 .List_left img{
@@ -70,6 +68,25 @@
 .List_left .ownername{
     margin:0 auto 50px;
 }
+.List_Main .Maincon{
+    padding: 30px 30px 110px;
+    text-align: left;
+    border-left:1px solid rgba(141, 120, 78, 0.38);
+}
+.Maincon .content{
+    text-align: left;
+}
+.List_Main .buttom{
+    text-align: right;
+    border-left:1px solid rgba(141, 120, 78, 0.38);
+}
+
+
+
+
+
+
+
 .hottest{/*右半部分的最热门列表*/
     width:150px;
     margin: 50px auto;
@@ -96,6 +113,18 @@
     margin: 0px auto;
     background: #FFFFFF;
     margin-bottom: 30px;
+}
+
+.footer .form-control{/*底部表单*/
+    width: 500px;
+}
+.footer .textarea{/*文本域*/
+    width: 600px;
+    height: 100px;
+    margin: 20px 0 10px 60px;
+}
+.footer .btn{/*按钮*/
+    margin-left: 60px;
 }
 .modal .modal-dialog{/*模态框大小*/
     width: 500px;
